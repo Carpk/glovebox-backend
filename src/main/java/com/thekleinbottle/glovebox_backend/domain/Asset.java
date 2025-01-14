@@ -20,6 +20,8 @@ public class Asset {
     @JoinColumn(name="account")
     private Account account;
 
+    public Asset() {}
+
     public Asset(String make, String model, Account account) {
         super();
         this.make = make;

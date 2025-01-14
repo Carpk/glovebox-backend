@@ -20,6 +20,8 @@ public class AppUser {
     @JoinColumn(name="account")
     private Account account;
 
+    public AppUser() {}
+
     public AppUser(String name, String email, Account account) {
         super();
         this.name = name;

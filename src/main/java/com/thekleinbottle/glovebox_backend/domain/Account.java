@@ -23,8 +23,11 @@ public class Account {
     @OneToMany(cascade=CascadeType.ALL, mappedBy="account")
     private List<Asset> assets;
 
-    public Account() {
+    public Account() {}
+
+    public Account(String companyName) {
         super();
+        this.companyName = companyName;
     }
 
     public Long getId() {

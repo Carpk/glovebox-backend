@@ -31,7 +31,7 @@ public class GloveboxBackendApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Account acct = new Account();
+		Account acct = new Account("ACME");
 		acctRepo.save(acct);
 
 		userRepo.save(new AppUser("Martin", "martin@mailg.com", acct));
