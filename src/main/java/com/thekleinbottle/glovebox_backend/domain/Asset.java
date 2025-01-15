@@ -1,5 +1,7 @@
 package com.thekleinbottle.glovebox_backend.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -41,6 +43,7 @@ public class Asset {
         return model;
     }
 
+    @JsonIgnore
     public Account getAccount() {
         return account;
     }
